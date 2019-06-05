@@ -5,12 +5,12 @@
 
       <!-- 画面いっぱいの画像 -->
       <figure class="cover-image" v-if="$mq === 'md' || $mq === 'sm'">
-        <img class="cover" src="~/assets/img/eye_catch_short.jpg" alt="">
+        <img class="cover" src="~/assets/img/eye_catch_short.png" alt="">
       </figure>
 
       <!-- 正方形の画像 -->
       <figure class="cover-image-wd" v-else>
-        <img class="cover-wd" src="~/assets/img/eye_catch_long.jpg" alt="">
+        <img class="cover-wd" src="~/assets/img/eye_catch_long.png" alt="">
       </figure>
 
     </div>
