@@ -4,7 +4,8 @@ export const state = () => ({
   list: jsonData,
   journals: Array,
   iConfs: Array,
-  dConfs: Array
+  dConfs: Array,
+  awards: Array
 })
 
 export const mutations = {
@@ -22,5 +23,8 @@ export const mutations = {
   },
   getdConfs(state) {
     state.dConfs = state.list.filter(item => item.tag === '国内会議');
+  },
+  getAwards(state) {
+    state.awards = state.list.filter(item => item.tag === 'Award');
   }
 };

@@ -22,6 +22,14 @@
       </div>
 
       <h2 class="subtitle is-size-3">
+        Awards
+      </h2>
+
+      <div class="cards" v-for="one in Awards" v-bind:key="one.title">
+        <myArticle :info=one />
+      </div>
+
+      <h2 class="subtitle is-size-3">
         Domestic Conference
       </h2>
 
@@ -50,6 +58,9 @@
       },
       dConferences() {
         return this.$store.state.publication.dConfs
+      },
+      Awards(){
+        return this.$store.state.publication.awards
       }
     },
     // レンダリング前に非同期えVuexストアへデータを反映する - Nuxt.js
@@ -58,6 +69,7 @@
       store.commit('publication/getJournals');
       store.commit('publication/getiConfs');
       store.commit('publication/getdConfs');
+      store.commit('publication/getAwards');
     },
     components: {
       myArticle

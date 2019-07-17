@@ -17,45 +17,9 @@
 
     <div class="container">
 
-      <!-- About Me -->
-      <h1 class="title text">About Me</h1>
-
       <p class="text is-size-5">
         人と人工物とのインタラクションデザインや、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>Human-Agent
         Interaction(HAI)やHuman-Robot Interaction(HRI)が主な活動領域です。</p>
-
-      <!-- Aimsのカード -->
-      <h1 class="title text">Research Interests</h1>
-
-      <div class="columns is-desktop">
-
-        <div class="column">
-          <div class="aim-card">
-            <div class="card-content">
-              <font-awesome-icon class="my-card-icon fa-3x" icon="people-carry" />
-              <p class="text is-size-5">人とロボットとが協調することで、高齢化社会の問題を解決していきます。</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="aim-card">
-            <div class="card-content">
-              <font-awesome-icon class="my-card-icon fa-3x" icon="project-diagram" />
-              <p class="text is-size-5">モデルとして検証することで、応用しやすいフレームワークを提供していきます。</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="aim-card">
-            <div class="card-content">
-              <font-awesome-icon class="my-card-icon fa-3x" icon="search" />
-              <p class="text is-size-5">なぜインタラクションが発生するのか、会話分析などの微視的な行為の分析から調査していきます。</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
 

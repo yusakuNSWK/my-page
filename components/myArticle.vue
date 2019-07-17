@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card listed-card">
     <div class="card-content" @click="isModalActive = true">
       <h1 class="is-size-5">
         {{ info.title }}
@@ -66,6 +66,12 @@
       },
       hasYusaku(name) {
         return name.includes('Yusaku') || name.includes('裕作');
+      },
+      MouseOver(){
+
+      },
+      MouseLeave(){
+
       }
     }
   }
@@ -73,6 +79,15 @@
 </script>
 
 <style lang="scss">
+  .listed-card{
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+  }
+
+  .listed-card:hover{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    transition: .3s;
+  }
+
   .emphasis{
     border-bottom: solid 3px #d3d3d3;
   }
