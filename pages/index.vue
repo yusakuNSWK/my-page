@@ -3,29 +3,30 @@
 
     <div class="container">
 
-      <!-- 画面いっぱいの画像 -->
-      <figure class="cover-image" v-if="$mq === 'md' || $mq === 'sm'">
-        <img class="cover" src="~/assets/img/eye_catch_short.png" alt="">
+      <figure class="cover-image" v-if="$mq === 'sm' || $mq === 'md'">
+        <div class="square-image">
+          <img class="cover" src="~/assets/img/eye_catch_short.jpg" alt="">
+        </div>
       </figure>
 
-      <!-- 正方形の画像 -->
       <figure class="cover-image-wd" v-else>
-        <img class="cover-wd" src="~/assets/img/eye_catch_long.png" alt="">
+        <img class="cover-wd" src="~/assets/img/eye_catch_long.jpg" alt="">
       </figure>
 
     </div>
 
     <div class="container">
+      <p class="text is-size-5" v-if="$mq === 'sm' || $mq === 'md'">
+        人と人工物とのインタラクションデザインや、<br>協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>Human-Agent
+        Interaction(HAI)や<br>Human-Robot Interaction(HRI)が主な活動領域です。</p>
 
-      <p class="text is-size-5">
+      <p class="text is-size-5" v-else>
         人と人工物とのインタラクションデザインや、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>Human-Agent
         Interaction(HAI)やHuman-Robot Interaction(HRI)が主な活動領域です。</p>
-
     </div>
 
   </div>
 </template>
-
 
 <style lang="scss">
   .cover-image-wd {
@@ -33,16 +34,18 @@
   }
 
   .cover-wd {
-    object-fit: cover;
+    object-fit: none;
     width: 100%;
     height: 400px;
   }
 
-  .cover-image {
-    margin-top: 70px;
+  .square-image{
+    text-align: center;
   }
 
-  //.cover {}
+  .cover-image {
+    margin-top: 50px;
+  }
 
   .text {
     text-align: center;

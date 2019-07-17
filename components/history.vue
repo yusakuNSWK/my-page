@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="duration-sm" v-if="$mq === 'md' || $mq === 'sm'">
-      <span>{{info.duration}}</span>
+    <div class="duration small" v-if="$mq === 'md' || $mq === 'sm'">
+      <span >{{info.duration}}</span>
     </div>
-    <div class="duration" v-else>
-      <span>{{info.duration}}</span>
+    <div class="duration long" v-else>
+      <span >{{info.duration}}</span>
     </div>
     <div class="where">
       <span>{{info.where}}</span>
@@ -35,9 +35,15 @@
 </script>
 
 <style lang="scss">
-  .duration {
+  .long {
     display: inline-block;
     width: 6rem;
+  }
+
+  .duration {
+    text-align-last:justify;
+    width: 90px;
+    margin-right: 10px;
   }
 
   .where {

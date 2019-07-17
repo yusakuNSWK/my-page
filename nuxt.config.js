@@ -67,7 +67,7 @@ export default {
     defaultBreakpoint: 'default',
     breakpoints: {
       sm: 460,
-      md: 800,
+      md: 900,
       lg: Infinity,
     }
   },
