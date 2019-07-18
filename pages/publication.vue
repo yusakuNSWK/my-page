@@ -79,18 +79,6 @@
 </script>
 
 <style>
-  .cards .card {
-    margin-bottom: 1em
-  }
-
-  .card-content {
-    padding: 1.5rem;
-    padding-top: 0.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
-}
-
   .title{
     margin-bottom: 1rem;
   }

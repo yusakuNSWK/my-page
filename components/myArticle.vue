@@ -1,14 +1,15 @@
 <template>
   <div class="card listed-card">
-    <div class="card-content" @click="isModalActive = true">
-      <h1 class="is-size-5">
+    <div class="card-content listed-card-content" @click="isModalActive = true">
+
+      <h1 class="is-size-5 listed-card-title">
         {{ info.title }}
       </h1>
       <ul class="authors is-size-6">
         <li v-for="(name, index) in info.authors" v-bind:key="name">
           <span v-if="index != 0">, </span>
           <span v-if="hasYusaku(name)" class="emphasis">{{ name }}</span>
-              <span v-else>{{ name }}</span>
+          <span v-else>{{ name }}</span>
         </li>
       </ul>
       <div class="appendix is-size-6" v-if="info.appendix !== ''">{{ info.appendix }} </div>
@@ -67,10 +68,10 @@
       hasYusaku(name) {
         return name.includes('Yusaku') || name.includes('裕作');
       },
-      MouseOver(){
+      MouseOver() {
 
       },
-      MouseLeave(){
+      MouseLeave() {
 
       }
     }
@@ -79,16 +80,35 @@
 </script>
 
 <style lang="scss">
-  .listed-card{
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+  .listed-card {
+    margin-bottom: 1em
   }
 
-  .listed-card:hover{
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+  .listed-card-content {
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  .listed-card-content::before {
+    content: "・";
+    position: absolute;
+    left: 12px;
+    top: 13px;
+  }  
+
+  .listed-card {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .listed-card:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: .3s;
   }
 
-  .emphasis{
+  .emphasis {
     border-bottom: solid 3px #d3d3d3;
   }
 
