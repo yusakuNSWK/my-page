@@ -42,7 +42,7 @@
 
   .duration {
     text-align-last:justify;
-    width: 90px;
+    width: 100px;
     margin-right: 10px;
   }
 
