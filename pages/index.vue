@@ -16,13 +16,14 @@
     </div>
 
     <div class="container">
-      <p class="text is-size-5" v-if="$mq === 'sm' || $mq === 'md'">
-        人と人工物とのインタラクションデザインや、<br>協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>Human-Agent
-        Interaction(HAI)や<br>Human-Robot Interaction(HRI)が主な活動領域です。</p>
+      <p class="text is-size-6 small" v-if="$mq === 'sm'">
+        人とロボットとの会話や、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、ロボットが人と協調できる振る舞いを作ることで、その謎を解明したいと思っています。<br>Human-Agent Interaction(HAI)やHuman-Robot Interaction(HRI)が主な活動領域です。</p>
 
-      <p class="text is-size-5" v-else>
-        人と人工物とのインタラクションデザインや、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>Human-Agent
-        Interaction(HAI)やHuman-Robot Interaction(HRI)が主な活動領域です。</p>
+      <p class="text is-size-5 medium" v-else-if="$mq === 'md'">
+        人とロボットとの会話や、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>ロボットが人と協調できる振る舞いを作ることで、<br>その謎を解明したいと思っています。<br>Human-Agent Interaction(HAI)や<br>Human-Robot Interaction(HRI)が主な活動領域です。</p>
+
+      <p class="text is-size-5 large" v-else>
+        人とロボットとの会話や、協調するための行為方略の研究を行っています。<br>人と人とがなぜ協調して、つながりを形成していくのかに興味があり、<br>ロボットが人と協調できる振る舞いを作ることで、その謎を解明したいと思っています。<br>Human-Agent Interaction(HAI)やHuman-Robot Interaction(HRI)が主な活動領域です。</p>
     </div>
 
   </div>
@@ -50,6 +51,12 @@
   .text {
     text-align: center;
     margin-top: 20px;
+
+    &.small{
+      text-align: justify;
+      text-align-last: left;
+      padding: 0 20px;
+    }
   }
 
   // https://stackoverflow.com/questions/17642953/centering-fontawesome-icons-vertically-and-horizontally
