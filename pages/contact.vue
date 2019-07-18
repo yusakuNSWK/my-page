@@ -11,7 +11,7 @@
             <div class="tile is-parent is-vertical">
               <article class="tile is-child">                
                 <p class="is-size-4">Address</p>
-                <p class="content">〒441-8580<br>愛知県豊橋市天伯町雲雀ヶ丘１－１<br>豊橋技術科学大学 情報・知能工学専攻<br>F-413 岡田研究室</p>
+                <p class="content">〒441-8580<br>愛知県豊橋市天伯町雲雀ヶ丘１－１<br>豊橋技術科学大学 情報・知能工学科<br>F-413 岡田研究室</p>
                 <p class="is-size-4">Email</p>
                 <p class="content">y143364｛at｝edu.tut.ac.jp</p>
               </article>
