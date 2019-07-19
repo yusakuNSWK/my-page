@@ -96,7 +96,7 @@
     content: "・";
     position: absolute;
     left: 12px;
-    top: 13px;
+    top: 12px;
   }  
 
   .listed-card {
